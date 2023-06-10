@@ -60,19 +60,3 @@ public:
 //         return result;
 //     }
 // };
-void print_vec(vector<int> &nums)
-{
-    for (const auto &kv : nums)
-    {
-        cout << kv << ' ';
-    }
-    cout << '\n';
-}
-int main()
-{
-    vector<int> v1 = {1, 3, 1, 1, 3, 4, 6, 6, 6};
-    Solution s1;
-    vector<int> v = s1.topKFrequent(v1, 3);
-
-    print_vec(v);
-}
