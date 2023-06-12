@@ -64,10 +64,3 @@ public:
         return maxcounter;
     }
 };
-int main()
-{
-    vector<int> v1 = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
-    Solution s1;
-    cout << s1.longestConsecutive(v1) << "\n";
-    return 0;
-}
