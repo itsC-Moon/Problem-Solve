@@ -27,10 +27,3 @@ public:
         return z;
     }
 };
-int main()
-{
-    Solution s1;
-    cout << s1.fib(12) << '\n';
-
-    return 0;
-}

@@ -13,18 +13,40 @@ A subsequence is derived from another sequence arr by deleting any number of ele
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
+#include <math.h>
 using namespace std;
-class Solution {
+class Solution
+{
 public:
-    int lenLongestFibSubseq(vector<int>& arr) 
+    int lenLongestFibSubseq(vector<int> &arr)
     {
-        
+        unordered_set<int> set;
+        int currentlen, maxlen;
+        for (int x : arr)
+            set.insert(x);
+        for (size_t i = 0; (int)i < arr.size(); i++)
+        {
+            
+        }
     }
 };
+bool isPerfectSquare(int x)
+{
+    int s = sqrt(x);
+    return (s * s == x);
+}
+ 
+// Returns true if n is a Fibonacci Number, else false
+bool isFibonacci(int n)
+{
+    // n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or
+    // both is a perfect square
+    return isPerfectSquare(5 * n * n + 4)
+           || isPerfectSquare(5 * n * n - 4);
+}
 int main()
 {
-    
-    
-    
+
     return 0;
 }
